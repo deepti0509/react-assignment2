@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Main from "./Main";
+import SideNav from "./SideNav";
+import TopNav from "./TopNav";
+import CssBaseline from '@mui/material/CssBaseline';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CssBaseline />
+      <TopNav />
+      <SideNav />
+      <Main />
     </div>
   );
 }
